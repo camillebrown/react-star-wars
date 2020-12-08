@@ -18,7 +18,7 @@ const Home = () => {
             console.log(data)
             return (
                     <div key={i} className="col s6">
-                        <div className="card-panel teal lighten-2">
+                        <div id="all-info" className="card-panel teal lighten-2">
                             <div className="card-content white-text">
                                 <span className="card-title">{data.name}</span>
                             </div>

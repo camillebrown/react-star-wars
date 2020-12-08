@@ -1,11 +1,12 @@
 import React from 'react'
 import NumberFormat from 'react-number-format';
+import { Link } from 'react-router-dom'
 
 const StarshipPage = (params) => {
     console.log(params.location.state.data)
     let shipInfo = params.location.state.data
     return(
-        <div>
+        <div className="card-panel teal lighten-2">
             <h1>{shipInfo.name}</h1>
             
             <p>Manufacturer: {shipInfo.manufacturer}</p>
@@ -13,6 +14,8 @@ const StarshipPage = (params) => {
             <p>Max Passengers: {shipInfo.passengers} </p>
             <p>Starship Class: {shipInfo.starship_class} </p>
             <p>Speed: {shipInfo.max_atmosphering_speed} mph </p>
+
+            <Link className="more" to="/">RETURN</Link>
         </div>    
 )}
 
