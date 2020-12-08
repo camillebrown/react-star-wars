@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.starship-name{
+  font-weight: bolder;
+}
+
+.card-title{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.more{
+  color: #303f9f;
+  font-weight: bold;
+}
+
+.card-panel{
+  width: 400px;
+  display: inline-block;
+}
